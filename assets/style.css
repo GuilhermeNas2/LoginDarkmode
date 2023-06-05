@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --color-light-50: #fff;
+
+    --color-dark-150: #000;
+    --color-dark-100: #252424;
+    --color-dark-50: #50484888;
+
+    --color-green-150: #388F4C ;
+    --color-green-100: #96FFAF;
+    --color-green-50: #6BDB86;
+
+    --color-gradient: linear-gradient(45deg, var(--color-green-150), var(--color-green-100), var(--color-green-50));
+}
+
+#login {
+    background: var(--color-gradient);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form {
+    width: 20%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background: var(--color-light-50);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .7);
+    animation: dark-to-light 0.3s ease-in-out;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.login-header h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    position: relative;
+}
+
+.login-header h1::before {
+    position: absolute;
+    content: '';
+    width: 40%;
+    background-color: var(--color-green-50);
+    height: 3px;
+    bottom: 10px;
+}
+
+.login-header i {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.form-midia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.form-midia img:hover {
+    transform: scale(1.2);
+}
+
+#form-label {
+    width: 90%;
+    height: 40%;
+    display: flex;    
+    flex-direction: column;
+    gap: 2em;
+}
+
+.form-label label {
+    width: 100%;
+    height: 30px;       
+    cursor: text;
+}
+
+.input-fild {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-label input {
+    width: 90%;
+    border-color: var(--color-dark-50);
+    height: 90%;
+    border: none;
+    border-bottom: 2px solid var(--color-green-50);
+    background-color: transparent;
+    
+}
+
+.form-label input:focus {
+    outline: none;
+}
+
+.form-label i {
+    font-size: 1.7em;    
+}
+
+#form-label a {
+    text-decoration: none;
+    color: var(--color-dark-100);
+}
+
+.button {
+    width: 55%;
+    height: 10%;
+    border: none;
+    background: var(--color-green-150);
+    color: var(--color-light-50);
+    font-size: 2em;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .8s;
+}
+
+#cadastro {
+    text-decoration: none;
+    color: var(--color-dark-100)
+}
+
+.dark#login-form  {
+    background-color: var(--color-dark-100);
+    color: var(--color-light-50);
+    animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login-form .form-label input, 
+.dark#login-form .form-label i {
+
+    color: var(--color-light-50);
+
+}
+
+.dark#login-form a {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark {
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100% {
+        
+        background-color: var(--color-dark-100);
+    }
+}

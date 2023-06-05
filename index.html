@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <main id="login">
+        <form id="login-form">
+            <div class="login-header">
+                <h1>
+                    Login
+                </h1>
+                <i id="mode-icon" class="fa-solid fa-moon"></i>
+            </div>
+            <div class="form-midia">
+                <a href="#">
+                    <img src="./assets/icons/icons8-facebook-48.png" alt="facebook logo">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/icons8-github-64.png" alt="github logo">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/icons8-google-logo-48.png" alt="google logo">
+                </a>
+            </div>
+
+            <div id="form-label">
+                <div class="form-label">
+                    <label for="name">
+                        Nome
+                        <div class="input-fild">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="name" name="name">
+                        </div>                        
+                    </label>
+                </div>
+                <div class="form-label">
+                    <label for="senha">
+                        Senha
+                        <div class="input-fild">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="senha" name="senha">
+                        </div>
+                    </label>
+                </div>
+                <div class="form-label">
+                    <label for="email">
+                        Email
+                        <div class="input-fild">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                <a href="#" class="form-forget">Esqueceu sua senha ?</a>
+            </div>    
+                
+                <button class="button">Entrar</button>
+                <a href="#" id="cadastro">Não possui cadastro ?</a>
+            
+        </form>
+    </main>
+
+    <script src="./assets/dark.js"></script>
+</body>
+</html>
